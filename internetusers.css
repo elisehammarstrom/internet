@@ -1,0 +1,103 @@
+body {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+
+h1 {
+  font-weight: 200;
+  font-size: 3em;
+  margin: 0 0 0.1em 0;
+  align-self: center;
+
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 0.9em;
+  margin: 0 0 50px;
+  color: #999;
+}
+
+p {
+  font-size:1.5em;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin: 0 0 0.1em 0;
+  align-self: center;
+
+}
+
+a {
+  margin-top: 50px;
+  display: block;
+  color: #3e95cd;
+}
+
+.link {
+  text-decoration: none;
+  color:black;
+  font-weight: 200;
+  font-size: 1em;
+  margin: 0 0 0.1em 0;
+  align-self: center;
+}
+
+
+.link:hover {
+  text-decoration: underline;
+}
+
+
+.cd-section {
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.down-arrow {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    
+}
+.down-arrow::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 80vh auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: 3s arrow infinite ease;
+}
+@-webkit-keyframes arrow {
+    0%, 100%{
+        top: 10px;
+    }
+    40% {
+        top: 30px;
+    }
+}
+@keyframes arrow {
+    0%, 100%{
+        top: 10px;
+    }
+    40% {
+        top: 30px;
+    }
+}
